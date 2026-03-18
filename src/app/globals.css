@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #0A1128;
+  --color-alabaster: #FAFAFA;
+  --color-cashmere: #EBD5BE;
+  --color-gold: #CD9A57;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-montserrat: var(--font-montserrat), sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-alabaster text-obsidian font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Luxury Utilities */
+.glass-nav {
+  @apply bg-alabaster/90 backdrop-blur-lg border-b border-gold/15 shadow-[0_4px_30px_rgba(205,154,87,0.05)];
+}
+
+.luxury-panel {
+  @apply bg-white/60 backdrop-blur-md border border-gold/15 shadow-[0_8px_32px_rgba(10,17,40,0.04)] transition-all duration-500 hover:border-gold/30 hover:bg-white;
+}
+
+.btn-gold-outline {
+  @apply inline-block border border-gold text-obsidian bg-transparent px-10 py-4 uppercase tracking-[0.2em] text-xs font-medium hover:bg-gold hover:text-white transition-all duration-500 shadow-[0_0_20px_rgba(205,154,87,0.05)];
+}
+
+.text-gold-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#DFB67A] via-[#CD9A57] to-[#B88645];
+}
+
+.text-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealUp 0.8s ease-out forwards;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bg-creamy-transition {
+  @apply bg-gradient-to-b from-alabaster via-[#F9F7F5] to-cashmere;
+}
+
+/* Enhancing highlight selection for a premium feel */
+::selection {
+  @apply text-obsidian;
+  background-color: rgba(205, 154, 87, 0.2);
+}
+
+@keyframes lava-margin-left {
+  0%, 100% { transform: translateY(0) scale(1); }
+  33% { transform: translateY(15%) scale(1.05); }
+  66% { transform: translateY(-10%) scale(0.95); }
+}
+
+@keyframes lava-margin-right {
+  0%, 100% { transform: translateY(0) scale(1); }
+  33% { transform: translateY(-15%) scale(0.95); }
+  66% { transform: translateY(10%) scale(1.05); }
+}
+
+@keyframes lava-center {
+  0%, 100% { transform: translate(-50%, 0) scale(1); }
+  50% { transform: translate(-50%, 10%) scale(1.1); }
+}
+
+.animate-lava-margin-left { animation: lava-margin-left 25s ease-in-out infinite; }
+.animate-lava-margin-right { animation: lava-margin-right 28s ease-in-out infinite alternate; }
+.animate-lava-center { animation: lava-center 32s ease-in-out infinite; }
