@@ -1,0 +1,35 @@
+[
+  {
+    "patient": "Female, 43",
+    "concerns": "Deep acne scarring, uneven texture, loss of firmness",
+    "treatment": "2 × Cutera Secret PRO CO2 Resurfacing",
+    "photographed": "8 weeks post-treatment",
+    "results": "",
+    "testimonial": "",
+    "id": "slide-1773927605228-2",
+    "beforeImage": "/uploads/before-slide-1773927605228-2-1773929045418.jpg",
+    "afterImage": "/uploads/after-slide-1773927605228-2-1773929048637.jpg"
+  },
+  {
+    "patient": "Female, 26",
+    "concerns": "Active acne scarring, post-inflammatory redness",
+    "treatment": "1 × Cutera Secret PRO\nCO2 Resurfacing",
+    "photographed": "6 weeks post-treatment",
+    "results": "",
+    "testimonial": "",
+    "id": "slide-1773927605228-1",
+    "beforeImage": "/uploads/before-slide-1773927605228-1-1773929052506.jpg",
+    "afterImage": "/uploads/after-slide-1773927605228-1-1773929055973.jpg"
+  },
+  {
+    "patient": "Female, late 30s",
+    "concerns": "Uneven skin tone, hyperpigmentation, dull complexion, mild acne scarring, early skin laxity",
+    "treatment": "1 × Cutera Secret PRO CO2 Resurfacing with TRA Regenerative Serum Infusion",
+    "photographed": "8 weeks post-treatment",
+    "results": "",
+    "testimonial": "",
+    "id": "slide-1773927605228-0",
+    "beforeImage": "/uploads/before-slide-1773927605228-0-1773929060033.jpg",
+    "afterImage": "/uploads/after-slide-1773927605228-0-1773929063313.jpg"
+  }
+]
